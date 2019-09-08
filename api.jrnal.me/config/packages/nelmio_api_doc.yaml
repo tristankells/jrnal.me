@@ -1,0 +1,21 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: JrnalMe API (Application Programing Interface)
+            description: A text analysis platform based on Scikit-Learn
+            termsOfService: http://jrnal.me/terms
+            contact:
+                name: JrnalMe Support
+                url: http://jrnal.me/support
+                email: support@jrnal.me
+            license:
+                name: Apache 2.0
+                url: http://www.apache.org/licenses/LICENSE-2.0.html
+            version: 1.0.0
+    areas: # to filter documented areas
+        # path_patterns:
+        #     - ^/api(?!/doc$) # Accepts routes under /api except /api/doc
+        path_patterns: # an array of regexps
+            - ^/api(?!/doc.*$)
+        # host_patterns:
+        #     - ^api\.
